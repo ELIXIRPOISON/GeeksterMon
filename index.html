@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEMON</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <div class="main-cont">
+        <div class="head-cont">
+            <h1 class="header">GeeksterMon</h1>
+        </div>
+        <div class="input-container">
+            <div class="inp-first">
+                <select name="types" id="types">
+                    <option value="choose">choose</option>
+                    <option value="grass">Grass</option>
+                    <option value="fire">Fire</option>
+                    <option value="water">Water</option>
+                    <option value="bug">Bug</option>
+                    <option value="normal">Normal</option>
+                    <option value="poison">Poison</option>
+                    <option value="electric">Electric</option>
+                    <option value="ground">Ground</option>
+                    <option value="fairy">Fairy</option>
+                    <option value="fighting">Fighting</option>
+                    <option value="psychic">Psychic</option>
+                    <option value="rock">Rock</option>
+                    <option value="ghost">Ghost</option>
+                    <option value="ice">Ice</option>
+                    <option value="dragon">Dragon</option>
+                </select>
+                <button id="filter">Filter by Type</button>
+                <button id="reset"><a href='./index.html'>Reset</a></button>
+            </div>
+            <div class="inp-second">
+                <input type="text" id="search" placeholder="Enter Pokemon Name"/>
+            </div>
+        </div>
+        <div class="pokemon-cont"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

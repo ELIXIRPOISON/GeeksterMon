@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+body{
+    background-color:#4e4e4e;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color:rgb(92, 89, 133);
+    border-radius: 10px;
+    height: 1.5rem;
+}
+
+.header {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 2.5rem;
+}
+#search{
+    width: 300px;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+  
+
+.main-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1.5rem;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+}
+
+.head-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.head-cont a {
+    height: 6rem;
+    width: 7rem;
+}
+
+.main-cont h1 {
+    font-size: 4rem;
+    color: rgb(20, 137, 86);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.inp-first button{
+    background-color: rgb(253, 87, 87);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#reset a{
+    text-decoration: none;
+    color: white;
+}
+
+#reset:hover,#filter:hover,#types:hover {
+    background-color: rgb(67, 205, 120);
+    box-shadow: 0 0 4px rgb(255, 255, 255);
+    color: white;
+    cursor: pointer;
+}
+
+.inp-first select {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color:rgb(184, 59, 24);
+
+}
+
+.inp-second input{
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.inp-second input:focus {
+    outline: none;
+    border: 2px solid blue;
+}
+
+.pokemon-cont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    margin-top: 3rem;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 12rem;
+    height: 17rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20%;
+    padding: 1rem 1.5rem;
+    transform-style: preserve-3d;
+    perspective: 1000;
+    background-color: transparent;
+    transition: transform 1s ease-in-out;
+    box-shadow: 0 0 18px rgb(219, 218, 217);
+    margin: 1rem;
+
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+    transition: transform 1.8s ease-in-out;
+}
+
+.card-front {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-inline: 1rem;
+    transition: transform 1s;
+    color : rgba(229, 237, 235, 0.344);
+}
+.card-front:hover{
+    color: aliceblue;
+}
+.card-back:hover{
+    color: aliceblue;
+}
+
+.pok-type span {
+    margin-right: 1rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 10px;
+    font-weight: 400;
+}
+
+.card-back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+}
+
+.card-back .back-info {
+    margin-top: 1.5rem;
+}
+
+.card-front .abilities {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.ab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.type {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.head {
+    color:rgb(192, 190, 178)
+}
+
+.card-back img {
+    width: 159px;
+    height: 150px;
+}
+
+.card-back h2 {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.card-back p {
+    font-size: 1.2rem;
+    color: rgb(116, 115, 112);
+}
